@@ -1,0 +1,60 @@
+.Thongbao_content {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    min-height: 500px;
+}
+
+.Thongbao_body {
+    padding: 20px;
+
+    background-color: transparent;
+}
+.Thongbao_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Thongbao_name {
+    font-weight: 700;
+    font-size: 30px;
+}
+.Thongbao_time {
+    font-style: italic;
+    font-size: 14px;
+}
+.Thongbao_des {
+    margin-top: 20px;
+    background-color: #ffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-height: 500px;
+    width: 1150px;
+}
+.Thongbao_text {
+    padding: 25px 60px;
+}
+.Thongbao_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+}
+.Thongbao_img_if {
+    height: 500px;
+    width: 450px;
+}
+
+.Thongbao_text {
+    white-space: pre-line;
+}
+
+.Thongbao_text p {
+    margin-left: 1rem; /* Thụt đầu dòng 1rem cho các đoạn văn bản trong thẻ p */
+}
+
+.Thongbao_text p::before {
+    content: '\00a0\00a0'; /* Thêm hai khoảng trắng trước mỗi dòng trong thẻ p */
+}

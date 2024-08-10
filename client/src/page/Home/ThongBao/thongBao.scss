@@ -1,0 +1,24 @@
+.notify-component {
+    width: 80%;
+    margin: auto;
+    margin-top: 8vh;
+
+    & .breadcrumb-notify {
+        width: 100%;
+        font-size: 18px;
+        margin-top: 80px;
+    }
+
+    & .notify-list {
+        margin-top: 2%;
+    }
+}
+.item a {
+    text-decoration: none; /* Loại bỏ gạch chân */
+    color: inherit; /* Màu sắc kế thừa từ phần tử cha */
+}
+
+.item a:hover {
+    text-decoration: none; /* Loại bỏ gạch chân khi hover */
+    color: inherit; /* Màu sắc kế thừa từ phần tử cha khi hover */
+}

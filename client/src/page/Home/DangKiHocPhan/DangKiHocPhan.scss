@@ -1,0 +1,67 @@
+.dang-ki-hoc-phan-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+
+    & .content {
+        width: 80%;
+        background-color: #fff;
+        box-shadow: rgba(33, 35, 38, 0.3) 0px 10px 10px -10px;
+        border-radius: 10px;
+
+        & .title {
+            width: 100%;
+            height: 8vh;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 2%;
+            border-bottom: 1px solid #ccc;
+
+            & h1 {
+                color: #166fbe;
+                font-size: 24px;
+                font-weight: 700;
+            }
+        }
+
+        & .ant-table-wrapper {
+            padding: 20px;
+
+            & .ant-table-thead th {
+                background: #0c6fbe !important;
+                color: #fff !important;
+            }
+        }
+
+        & .submitBtn {
+            width: 100%;
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+
+            & button {
+                width: 20%;
+                height: 5vh;
+                background-color: #0c6fbe;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .dang-ki-hoc-phan-container {
+        & .content {
+            width: 100%;
+        }
+    }
+}

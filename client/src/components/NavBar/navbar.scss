@@ -1,0 +1,214 @@
+.navbar-component {
+    width: 100%;
+    height: 8vh;
+    border-bottom: 1px solid #ccc;
+    box-shadow: rgba(33, 35, 38, 0.3) 0px 10px 10px -10px;
+    background-color: #fff;
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+
+    & .logo {
+        width: 20%;
+        height: 100%;
+        // background-color: #ccc;
+
+        & img {
+            height: 80%;
+            float: right;
+            margin-top: 2%;
+            margin-right: 4%;
+        }
+    }
+
+    & .search-bar {
+        width: 24%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        & .search-input {
+            margin-left: 2%;
+            height: 60%;
+            width: 80%;
+            border: 1px solid #ccc;
+            padding-left: 16px;
+            border-radius: 16px;
+
+            &:focus-visible {
+                outline: none;
+            }
+        }
+    }
+
+    & .menu {
+        width: 56%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        & ul {
+            margin: 0 !important;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        & .active-box-shadow {
+            box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        }
+
+        & .dangki-hocphan {
+            text-decoration: none;
+            color: #878787;
+            font-weight: 400;
+        }
+
+        & ul li {
+            text-decoration: none;
+            display: inline-block;
+
+            color: #878787;
+            padding: 8px 10px;
+
+            & .dir {
+                margin-left: 8px;
+                //
+                width: 100px;
+                height: 100%;
+                color: #878787;
+                text-decoration: none;
+            }
+
+            & i {
+                padding: 8px;
+            }
+
+            &:hover {
+                color: #1b1b1b;
+                cursor: pointer;
+
+                & .dir {
+                    color: #1b1b1b;
+                }
+            }
+        }
+
+        & .infomation {
+            display: inline-block;
+            height: 100%;
+            margin-left: 20px;
+
+            & .avt {
+                height: 100%;
+                display: flex;
+                align-items: center;
+
+                & img {
+                    border-radius: 50%;
+                    height: 64%;
+                }
+
+                & span {
+                    margin-left: 12px;
+                    margin-right: 8px;
+                    letter-spacing: 2px;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    user-select: none;
+
+                    &:hover {
+                        color: #1b1b1b;
+                        cursor: pointer;
+                    }
+
+                    & .transform {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+
+            & .modal-logout {
+                position: absolute;
+                top: 110%;
+                width: 220px;
+                background-color: #fff;
+                box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+                z-index: 10;
+
+                & ul {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    padding: 0 !important;
+
+                    & li {
+                        width: 100%;
+                        height: 60px;
+                        list-style-type: none;
+                        display: flex;
+                        align-items: center;
+                        border-bottom: 1px solid #ccc;
+
+                        & span {
+                            margin-left: 8%;
+                        }
+
+                        &:hover {
+                            cursor: pointer;
+                            background-color: #ccc;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.modalshowChangePass {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+
+    & .close-form-btn {
+        background-color: transparent;
+        float: right;
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .navbar-component {
+        & .logo {
+            width: 30%;
+        }
+
+        & .search-bar {
+            display: none;
+        }
+
+        & .menu {
+            width: 40%;
+
+            & ul {
+                padding: 0;
+                & .li-menu span {
+                    display: none;
+                }
+
+                & .infomation {
+                    width: 200px;
+                    font-size: 10px;
+
+                    & .modal-logout {
+                        width: 160px;
+                        right: 2vw;
+                    }
+                }
+
+                // display: none;
+            }
+        }
+    }
+}

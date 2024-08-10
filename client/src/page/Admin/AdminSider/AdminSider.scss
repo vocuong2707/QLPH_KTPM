@@ -1,0 +1,40 @@
+.sider {
+    width: 200px;
+    position: relative;
+    padding-top: 70px;
+}
+.setting {
+    position: absolute;
+    bottom: 15px;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+    .admin_item {
+        margin-bottom: 10px;
+        &:hover {
+            color: red;
+        }
+    }
+}
+.menu {
+    &:focus {
+        background-color: blue;
+    }
+}
+.ant-menu-item a,
+.ant-menu-submenu-title {
+    text-decoration: underline;
+}
+
+/* Thêm dấu gạch chân khi hover qua mục */
+.ant-menu-item a:hover,
+.ant-menu-submenu-title:hover {
+    text-decoration: none;
+}
+
+.ant-menu-vertical.ant-menu-sub .quanlyhocphan-submenu .ant-menu-submenu-popup {
+    max-height: 10px;
+    overflow-y: auto;
+}

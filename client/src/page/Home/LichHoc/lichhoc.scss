@@ -1,0 +1,17 @@
+.calendar-component {
+    width: 92%;
+    margin: auto;
+    margin-top: 8vh;
+
+    & .card {
+        height: 100%;
+
+        & .paper {
+            height: 100%;
+
+            & .schedule {
+                height: 100%;
+            }
+        }
+    }
+}

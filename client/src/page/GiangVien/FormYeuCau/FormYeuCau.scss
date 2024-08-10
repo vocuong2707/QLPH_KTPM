@@ -1,0 +1,100 @@
+.formyeucau__container {
+    display: flex;
+}
+.formyeucau__list {
+    flex: 1;
+    height: 700px;
+    border-left: 1px solid rgb(200, 199, 199);
+    margin: 70px 15px 10px 0px;
+    padding-left: 10px;
+}
+.formyeucau__cho {
+    height: 300px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+.formyeucau__card {
+    cursor: pointer;
+    height: 70px;
+    background-color: rgba(87, 143, 247, 0.496);
+    margin: 5px;
+    padding: 6px;
+}
+.formyeucau__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.formyeucau__card_2:hover,
+.formyeucau__card:hover {
+    transform: scale(1.005);
+}
+
+.formyeucau__daduyet {
+    height: 300px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+.formyeucau__card_2 {
+    cursor: pointer;
+    height: 100px;
+    background-color: rgba(247, 82, 66, 0.496);
+    margin: 5px;
+    padding: 6px;
+}
+.formyeucau__header_2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.your-form-container {
+    max-width: 600px;
+    flex: 1;
+
+    margin: 70px 50px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    width: 600px;
+    height: 650px;
+    background-color: rgb(213, 226, 240);
+
+    & form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    & label {
+        margin-bottom: 10px;
+    }
+
+    & input,
+    textarea,
+    select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    & textarea {
+        height: 170px;
+    }
+
+    & button {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    & button:hover {
+        background-color: #45a049;
+    }
+}

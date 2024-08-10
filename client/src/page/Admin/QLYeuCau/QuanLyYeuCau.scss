@@ -1,0 +1,88 @@
+/* Container cho toàn bộ nội dung */
+.yeucau__body__content {
+    display: flex;
+    min-height: 800px;
+}
+.yeucau__content {
+    margin-top: 70px;
+    max-height: 700px;
+    overflow-y: auto;
+}
+
+.list__yeucau {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    max-height: 700px;
+    overflow-y: auto;
+    height: auto;
+    gap: 5px;
+}
+.yeucau__card {
+    height: 38vh;
+    width: 150vh;
+    background-color: rgb(149, 203, 235);
+}
+.yeucau__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+.yeucau__title {
+    font-size: 25px;
+    font-weight: 700px;
+}
+.yeucau__user {
+    font-size: 15px;
+    font-style: italic;
+}
+.yeucau__body {
+    padding-left: 30px;
+    font-size: 15px;
+}
+.yeucau__item {
+    padding: 3px 0px;
+}
+.yeucau_form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.yeucau__phanhoi {
+    width: 500px;
+    margin-left: 30px;
+    height: 50px;
+}
+.yeucau__phanhoi textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    max-height: 90px;
+    overflow-y: auto;
+}
+
+.yeucau__footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding-right: 40px;
+}
+.yeucau__xacnhan {
+    background-color: rgb(42, 206, 39);
+    margin-right: 50px;
+    width: 150px;
+    border-radius: 3px;
+}
+.yeucau__tuchoi {
+    background-color: rgb(236, 118, 118);
+    width: 150px;
+    border-radius: 3px;
+    color: #ffffff;
+}

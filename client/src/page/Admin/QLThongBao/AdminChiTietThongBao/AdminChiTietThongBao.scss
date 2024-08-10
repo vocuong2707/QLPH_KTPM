@@ -1,0 +1,68 @@
+.Admin_content {
+    min-height: 800px;
+    padding-top: -70px;
+}
+.right {
+    margin-top: 20px;
+}
+.Admin_Thongbao_content {
+    padding-top: 8vh;
+    display: flex;
+    justify-content: center;
+    min-height: 500px;
+    max-height: 700px;
+    overflow-y: auto;
+}
+
+.Admin_Thongbao_body {
+    background-color: transparent;
+    padding-bottom: 70px;
+}
+.Admin_Thongbao_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Admin_Thongbao_name {
+    font-weight: 700;
+    font-size: 30px;
+}
+.Admin_Thongbao_time {
+    font-style: italic;
+    font-size: 14px;
+}
+.Admin_Thongbao_des {
+    margin-top: 20px;
+    background-color: #ffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-height: 500px;
+    width: 1150px;
+}
+.Admin_Thongbao_text {
+    padding: 35px 55px;
+}
+.Admin_Thongbao_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+}
+.Admin_Thongbao_img_if {
+    height: 500px;
+    width: 400px;
+}
+
+.Admin_Thongbao_text {
+    white-space: pre-line;
+}
+
+.Admin_Thongbao_text p {
+    margin-left: 1rem; /* Thụt đầu dòng 1rem cho các đoạn văn bản trong thẻ p */
+}
+
+.Admin_Thongbao_text p::before {
+    content: '\00a0\00a0'; /* Thêm hai khoảng trắng trước mỗi dòng trong thẻ p */
+}

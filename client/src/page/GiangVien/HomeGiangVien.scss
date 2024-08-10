@@ -1,0 +1,9 @@
+.item_thongbao a {
+    text-decoration: none; /* Loại bỏ gạch chân */
+    color: inherit; /* Màu sắc kế thừa từ phần tử cha */
+}
+
+.item_thongbao a:hover {
+    text-decoration: none; /* Loại bỏ gạch chân khi hover */
+    color: inherit; /* Màu sắc kế thừa từ phần tử cha khi hover */
+}
